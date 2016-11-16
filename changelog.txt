@@ -2,6 +2,11 @@ JM News Ticker Changelog
 
 /***************************************************************************/
 
+ version 0.0.2
+ 
+ 
+ * Some minor code formatting updates
+ 
  version 0.0.1
 
  * First version. Originally based on Artetics Art News Ticker but reworked to

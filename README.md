@@ -1,2 +1,2 @@
 # JM-News-Ticker
-A Joomla wrapper for jquery-news-ticker.
+A jQuery-news-ticker wrapper for Joomla! 3.x.

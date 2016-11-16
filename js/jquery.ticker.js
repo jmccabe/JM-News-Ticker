@@ -10,9 +10,6 @@
 
     You should have received a copy of the GNU General Public License
     along with jQuery News Ticker.  If not, see <http://www.gnu.org/licenses/>.
-
-    Includes a fix for the deprecation of .live in versions of jQuery that are
-    later than what this was originally developed with.
 */
 (function($){
 	$.fn.ticker = function(options) {
