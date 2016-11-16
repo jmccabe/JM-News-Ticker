@@ -1,0 +1,15 @@
+JM News Ticker Changelog
+
+/***************************************************************************/
+
+ version 0.0.1
+
+ * First version. Originally based on Artetics Art News Ticker but reworked to
+   be more compliant with Joomla structuring wrt template overrides etc, and to
+   take advantage of Joomla 3 field types. Also fixes a few issues that exist
+   in the Artetics version, e.g:
+   ** the 'reveal' didn't work properly (because the swipe style didn't have a
+      background colour set)
+   ** links were a bit too simple so the article got shown on the same page
+      as the ticker instead of taking you to a different page.
+   ** overall improvements in the positioning of elements

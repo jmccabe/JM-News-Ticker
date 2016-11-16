@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" position="status" method="upgrade">
+	<name>JM News Ticker</name>
+	<author>John McCabe</author>
+	<creationDate>November 2016</creationDate>
+	<copyright>Copyright (C) 2016 John McCabe. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>john@mccabe.org.uk</authorEmail>
+	<authorUrl>www.mccabe.org.uk</authorUrl>
+	<version>0.0.1</version>
+	<description><![CDATA[A Joomla module to wrap jQuery-News-Ticker.]]></description>
+	<files>
+		<filename module="mod_jmnewsticker">mod_jmnewsticker.php</filename>
+		<filename>helper.php</filename>
+		<filename>js/jquery.js</filename>
+		<filename>js/jquery.nc.js</filename>
+		<filename>js/jquery.ticker.js</filename>
+		<filename>css/style.css</filename>
+		<folder>images</folder>
+		<folder>tmpl</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="Module Class Suffix" />
+				<field name="controls" type="radio" default="1" label="Controls" class="btn-group btn-group-yesno" description="Show next, previous, play, pause buttons">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="loadJ" type="radio" default="1" label="Load jQuery" class="btn-group btn-group-yesno" description="Load jQuery library or not. Select no if you already have jQuery on your page">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="category" type="category" extension="com_content" label="Category" description="Select a category"/>
+				<field name="titleText" type="text" default="Latest" label="Title text" description="Title text" />
+				<field name="direction" type="radio" default="ltr" label="Direction" class="btn-group" description="Text direction">
+					<option value="ltr">Left-To-Right</option>
+					<option value="rtl">Right-To-Left</option>
+				</field>
+				<field name="displayType" type="radio" default="reveal" label="Display Type" class="btn-group" description="Reveal show the text letter-by-letter; fade shows the whole text in one go.">
+					<option value="reveal">Reveal</option>
+					<option value="fade">Fade</option>
+				</field>
+				<field name="showItems" type="text" default="" label="Max number of items" description="The maximum number of items to show" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
